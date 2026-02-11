@@ -31,7 +31,7 @@
                 <form action="{{route('notes.destroy',$note)}}" method="post">
                     @method('DELETE')
                     @csrf
-                    <x-primary-button class="bg-red-400 hover:bg-red-500 px-4 py-2"
+                    <x-primary-button class="bg-red-400 hover:bg-red-500 px-4 py-5"
                                       onclick="return confirm('Are you sure you to move to thrash')"
                     >Move to Trash
                     </x-primary-button>
