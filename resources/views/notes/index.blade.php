@@ -16,7 +16,7 @@
 {{--                <button >delete</button>--}}
             @endif
             @forelse($notes as $note)
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6 text-grey-800">
+            <div class="bg-white dark:bg-gray-600 overflow-hidden shadow-sm sm:rounded-lg p-6 ">
 <!-- {{--                <div class="p-6 text-gray-900 dark:text-gray-100">--}} -->
 
 <!-- {{--                       <div>--}} -->
@@ -30,7 +30,7 @@
                                    class="hover:underline" >{{$note->title}}</a>
                            </h2>
 
-                            {!! Str::limit($note->text, 200, '...')!!}
+                            <p class="bg-grey-500">{!! Str::limit($note->text, 200, '...')!!}</p>
                             @if($note->notebook)
                                 <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
                                     <strong>Notebook:</strong> <a href="{{route('notebooks.show', $note->notebook)}}" class="text-blue-600 dark:text-blue-400 hover:underline">{{$note->notebook->name}}</a>
