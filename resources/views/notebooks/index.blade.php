@@ -11,7 +11,7 @@
                 + New Notebook
             </x-link-button>
             @forelse($notebooks as $notebook)
-                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
+                <div class="bg-white dark:bg-gray-600 overflow-hidden shadow-sm sm:rounded-lg p-6">
 
                     <h2 class="font-bold text-2xl text-blue-600">
                         <a href="{{route('notebooks.show', $notebook)}}" class="hover:underline" >{{$notebook->name}}</a>
