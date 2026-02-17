@@ -37,9 +37,9 @@
                                 </p>
                             @endif
                             <span class="block mt-4 text-sm opacity-70">{{$note->updated_at->diffForHumans()}}</span>
-{{--                       </div>--}}
+<!-- {{--                       </div>--}} -->
 
-{{--                </div>--}}
+<!-- {{--                </div>--}} -->
             </div>
             @empty
                 <p>You have no notes yet</p>
@@ -47,15 +47,8 @@
             {{$notes->links()}}
         </div>
     </div>
-<!-- {{--    {{ Str::limit(strip_tags($note->text), 200, '...') }}--}} -->
+
 </x-app-layout>
-<!-- {{--<style>--}}
-{{--    ul,ol{--}}
-{{--        list-style: none;--}}
-{{--    }--}}
-{{--</style>--}}
-{{--<div class="prose dark:prose-invert max-w-none" style="list-style-type: disc">--}}
-{{--    {!! ($note->text) !!}--}}
-{{--</div>--}} -->
+
 
 
