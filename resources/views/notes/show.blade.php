@@ -70,13 +70,6 @@
         
     </div>
     
-    <!-- <input type="checkbox">hi
-    <ul class="list-style-type:disc"> <li>hey</li></ul>
-            <ul class="">{!! $note->text !!}</ul> -->
 </x-app-layout>
-<div>
-                    <ul>
-                        <li>key</li>
-                    </ul>
-                </div>
+
 
